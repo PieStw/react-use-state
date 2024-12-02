@@ -2,10 +2,16 @@ import React from "react";
 import "./ButtonList.css";
 import ButtonItem from "./buttonItem/ButtonItem";
 
-export default function ButtonList() {
+export default function ButtonList({ languages }) {
   return (
     <>
-      <ButtonItem name={"a"} />
+      <div className="button-list">
+        {languages.map((language, index) => (
+          <div key={index}>
+            <ButtonItem name={language.title} />
+          </div>
+        ))}
+      </div>
     </>
   );
 }
