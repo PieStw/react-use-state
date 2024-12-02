@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
 
-export default function Card({ languages }) {
+export default function Card({ language }) {
   return (
     <>
-      <div class="card">
-        <div class="card-body">This is some text within a card body.</div>
+      <div className="card">
+        <div className="card-body">
+          <h3 className="card-title">{language.title}</h3>
+          {language.description}
+        </div>
       </div>
     </>
   );
