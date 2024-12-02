@@ -5,7 +5,7 @@ import { languages } from "../../data/programmingLanguages";
 import Card from "../card/Card";
 
 export default function Main() {
-  const [language, setlanguage] = useState(languages[0]);
+  const [language, setlanguage] = useState(null);
 
   function setLanguage(id) {
     setlanguage(languages[id]);
