@@ -5,16 +5,16 @@ import { languages } from "../../data/programmingLanguages";
 import Card from "../card/Card";
 
 export default function Main() {
-  const [language, setlanguage] = useState(null);
+  const [language, setLanguage] = useState(null);
 
-  function setLanguage(id) {
-    setlanguage(languages[id]);
+  function setLang(id) {
+    setLanguage(languages[id]);
   }
 
   return (
     <>
       <div className="container">
-        <ButtonList languages={languages} setLanguage={setLanguage} />
+        <ButtonList languages={languages} setLanguage={setLang} />
         <Card language={language} />
       </div>
     </>

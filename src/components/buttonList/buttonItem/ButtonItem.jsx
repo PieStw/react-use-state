@@ -9,7 +9,7 @@ export default function ButtonItem({ id, name, getId, isActive }) {
       <button
         className={"btn btn-" + type}
         onClick={() => {
-          getId(id);
+          getId(id - 1);
         }}
       >
         {name}

@@ -3,10 +3,10 @@ import "./ButtonList.css";
 import ButtonItem from "./buttonItem/ButtonItem";
 
 export default function ButtonList({ languages, setLanguage }) {
-  const [activeButton, setActiveButton] = useState(null);
+  const [isActive, setIsActive] = useState(null);
 
   function getId(id) {
-    setActiveButton(id);
+    setIsActive(id + 1);
     setLanguage(id);
   }
 
@@ -19,7 +19,7 @@ export default function ButtonList({ languages, setLanguage }) {
               id={language.id}
               name={language.title}
               getId={getId}
-              isActive={activeButton === language.id}
+              isActive={isActive === language.id}
             />
           </div>
         ))}
