@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ButtonItem.css";
 
 export default function ButtonItem({ id, name, getId, isActive }) {
