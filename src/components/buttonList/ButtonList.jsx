@@ -6,7 +6,7 @@ export default function ButtonList({ languages, setLanguage }) {
   const [isActive, setIsActive] = useState(null);
 
   function getId(id) {
-    setIsActive(id + 1);
+    setIsActive(id);
     setLanguage(id);
   }
 

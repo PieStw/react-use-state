@@ -8,7 +8,7 @@ export default function Main() {
   const [language, setLanguage] = useState(null);
 
   function setLang(id) {
-    setLanguage(languages[id]);
+    setLanguage(languages.find((language) => language.id === id));
   }
 
   return (
